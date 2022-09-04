@@ -5,6 +5,9 @@ public class Leap{
 
 
    public string IsLeapYear(int year){
+    if(year < 1582){
+        return "Error your input msut be higher than or equal to 1582";
+    }
         if(year % 4==0){
             if(year % 100 == 0){
                 if(year % 400 == 0){
@@ -17,4 +20,7 @@ public class Leap{
             return "nay";
         }
     }
+
 }
+
+
